@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+body{
+  display: flex;
+  height: 95vh;
+  background: #202632;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #313a49;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 40%;
+
+}
+
+/* ### Body Copy
+
+- Font size (quote): 28px
+
+### Font
+56fdab
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 800 */
+.number {
+  color: #55ffa9;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  margin: 25px;
+}
+
+.texto {
+  color: #d6e7f1;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  margin: 0;
+  font-size: 28px;
+  text-align: center
+}
+
+.container_divider {
+  margin: 25px;
+}
+
+.container_dice {
+  position: relative;
+  bottom: -38px;
+  background:#55ffa9;
+  border-radius: 300px;
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_dice:hover {
+  background: #54fead;
+  box-shadow: 0px 0px 30px 3px #54fead;
+}
+.container_dice:active {
+  background:#55ffa9;
+  box-shadow: 0px 0px 0px;
+}
+
+.container_dice_img {
+  margin: 15px
+}
+
+@media (max-width: 1100px) {
+  .container{
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_divider_img{
+    content:url("./images/pattern-divider-mobile.svg");
+  }
+  .container {
+    width:80%;
+  }
+
+}
+@media (max-width: 320px) {
+  .container {
+    width: 310px
+  }
+}
