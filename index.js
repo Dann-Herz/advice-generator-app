@@ -7,7 +7,7 @@ dice.addEventListener("click", fetchear);
 
 async function fetchear() {
   try {
-    let response = await fetch(API).then(response => response.json());
+    let response = await fetch(API).then(response => response.json()).catch(error => console.log(error));
     number.innerHTML = `Advice #${response.slip.id}`
     advice.innerHTML = response.slip.advice;
     console.log(response.slip.advice)
